@@ -15,10 +15,12 @@ class MasterViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupStrings()
+        self.tableView.reloadData()
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
+        self.clearsSelectionOnViewWillAppear = true
         super.viewWillAppear(animated)
     }
 
@@ -38,7 +40,7 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let index = indexPath.row
-                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                let controller = segue.destination as! DetailViewController
                 controller.isOrientationLocked = (index == 0)
             }
         }
