@@ -10,7 +10,7 @@
 #import <JWPlayer-SDK/JWPlayerController.h>
 #import <Masonry/Masonry.h>
 
-@interface VideoPlayerCollectionViewCell ()
+@interface VideoPlayerCollectionViewCell () <JWPlayerDelegate>
 
 @property (nonatomic, strong) JWPlayerController *player;
 
@@ -60,6 +60,7 @@
     self.player.openSafariOnAdClick = YES;
     self.player.forceFullScreenOnLandscape = self.isLandscapeSupported;
     self.player.forceLandscapeOnFullScreen = self.isLandscapeSupported;
+    self.player.delegate = self;
 
     [self.contentView addSubview:self.player.view];
 
@@ -97,5 +98,12 @@
     
     return config;
 }
+
+#pragma mark - JWPlayerDelegate
+
+- (void)onFirstFrame:(NSInteger)loadTime {
+    NSLog(@"FirstFrame: %i", loadTime);
+}
+
 
 @end
