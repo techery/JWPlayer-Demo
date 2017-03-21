@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		449BB2CE1E810D6A00240E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BB2CD1E810D6A00240E5D /* AppDelegate.swift */; };
-		449BB2D01E810D6A00240E5D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BB2CF1E810D6A00240E5D /* MasterViewController.swift */; };
-		449BB2D21E810D6A00240E5D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BB2D11E810D6A00240E5D /* DetailViewController.swift */; };
 		449BB2D51E810D6A00240E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449BB2D31E810D6A00240E5D /* Main.storyboard */; };
 		449BB2D71E810D6A00240E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449BB2D61E810D6A00240E5D /* Assets.xcassets */; };
 		449BB2DA1E810D6A00240E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449BB2D81E810D6A00240E5D /* LaunchScreen.storyboard */; };
+		B2FA86A476617F6C171D46C4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA81FD6284C9F80105617F /* ListViewController.swift */; };
+		B2FA8D2B77B63955754D5CED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA836538D3777AAA17CEC9 /* DetailViewController.swift */; };
+		B2FA8ECDF601E5F765B8C7DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA826ADCEA95CDEAE29FED /* AppDelegate.swift */; };
+		D23C3054A7A4AC215979BFFF /* Pods_JWPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457839988A8ED32C5F62D72D /* Pods_JWPlayerDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19357CF3011165511D053AE7 /* Pods-JWPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWPlayerDemo/Pods-JWPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		449BB2CA1E810D6A00240E5D /* JWPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		449BB2CD1E810D6A00240E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		449BB2CF1E810D6A00240E5D /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		449BB2D11E810D6A00240E5D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		449BB2D41E810D6A00240E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		449BB2D61E810D6A00240E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		449BB2D91E810D6A00240E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		449BB2DB1E810D6A00240E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		457839988A8ED32C5F62D72D /* Pods_JWPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F704183BCB9094E69F28C1 /* Pods-JWPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWPlayerDemo/Pods-JWPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B2FA81FD6284C9F80105617F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		B2FA826ADCEA95CDEAE29FED /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2FA836538D3777AAA17CEC9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23C3054A7A4AC215979BFFF /* Pods_JWPlayerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				449BB2CC1E810D6A00240E5D /* JWPlayerDemo */,
 				449BB2CB1E810D6A00240E5D /* Products */,
+				EA09D57E0C3EBFCC9D2D59BB /* Pods */,
+				7AA86BFD92EDD4010FFA2B48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +63,40 @@
 		449BB2CC1E810D6A00240E5D /* JWPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				449BB2CD1E810D6A00240E5D /* AppDelegate.swift */,
-				449BB2CF1E810D6A00240E5D /* MasterViewController.swift */,
-				449BB2D11E810D6A00240E5D /* DetailViewController.swift */,
 				449BB2D31E810D6A00240E5D /* Main.storyboard */,
 				449BB2D61E810D6A00240E5D /* Assets.xcassets */,
 				449BB2D81E810D6A00240E5D /* LaunchScreen.storyboard */,
 				449BB2DB1E810D6A00240E5D /* Info.plist */,
+				B2FA87867924291E75E2D018 /* Source */,
 			);
 			path = JWPlayerDemo;
+			sourceTree = "<group>";
+		};
+		7AA86BFD92EDD4010FFA2B48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				457839988A8ED32C5F62D72D /* Pods_JWPlayerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2FA87867924291E75E2D018 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B2FA836538D3777AAA17CEC9 /* DetailViewController.swift */,
+				B2FA81FD6284C9F80105617F /* ListViewController.swift */,
+				B2FA826ADCEA95CDEAE29FED /* AppDelegate.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EA09D57E0C3EBFCC9D2D59BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88F704183BCB9094E69F28C1 /* Pods-JWPlayerDemo.debug.xcconfig */,
+				19357CF3011165511D053AE7 /* Pods-JWPlayerDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 449BB2DE1E810D6A00240E5D /* Build configuration list for PBXNativeTarget "JWPlayerDemo" */;
 			buildPhases = (
+				383B6189EC632B0C0BC95587 /* [CP] Check Pods Manifest.lock */,
 				449BB2C61E810D6A00240E5D /* Sources */,
 				449BB2C71E810D6A00240E5D /* Frameworks */,
 				449BB2C81E810D6A00240E5D /* Resources */,
+				E292C8104E5DC9100B71248E /* [CP] Embed Pods Frameworks */,
+				6E9267B909CC4177975247C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,14 +170,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		383B6189EC632B0C0BC95587 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E9267B909CC4177975247C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWPlayerDemo/Pods-JWPlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E292C8104E5DC9100B71248E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWPlayerDemo/Pods-JWPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		449BB2C61E810D6A00240E5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				449BB2D21E810D6A00240E5D /* DetailViewController.swift in Sources */,
-				449BB2D01E810D6A00240E5D /* MasterViewController.swift in Sources */,
-				449BB2CE1E810D6A00240E5D /* AppDelegate.swift in Sources */,
+				B2FA8D2B77B63955754D5CED /* DetailViewController.swift in Sources */,
+				B2FA86A476617F6C171D46C4 /* ListViewController.swift in Sources */,
+				B2FA8ECDF601E5F765B8C7DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +344,12 @@
 		};
 		449BB2DF1E810D6A00240E5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88F704183BCB9094E69F28C1 /* Pods-JWPlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 88GZ4GY3GM;
 				INFOPLIST_FILE = JWPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.techery.JWPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,10 +359,12 @@
 		};
 		449BB2E01E810D6A00240E5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19357CF3011165511D053AE7 /* Pods-JWPlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 88GZ4GY3GM;
 				INFOPLIST_FILE = JWPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.techery.JWPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +391,7 @@
 				449BB2E01E810D6A00240E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
