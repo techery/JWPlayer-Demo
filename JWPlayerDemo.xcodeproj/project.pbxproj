@@ -10,6 +10,7 @@
 		449BB2D51E810D6A00240E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449BB2D31E810D6A00240E5D /* Main.storyboard */; };
 		449BB2D71E810D6A00240E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449BB2D61E810D6A00240E5D /* Assets.xcassets */; };
 		449BB2DA1E810D6A00240E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449BB2D81E810D6A00240E5D /* LaunchScreen.storyboard */; };
+		44D9F99E1E812246002F10DF /* VideoPlayerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9F99D1E812246002F10DF /* VideoPlayerCollectionViewCell.m */; };
 		B2FA86A476617F6C171D46C4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA81FD6284C9F80105617F /* ListViewController.swift */; };
 		B2FA8D2B77B63955754D5CED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA836538D3777AAA17CEC9 /* DetailViewController.swift */; };
 		B2FA8ECDF601E5F765B8C7DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA826ADCEA95CDEAE29FED /* AppDelegate.swift */; };
@@ -23,6 +24,9 @@
 		449BB2D61E810D6A00240E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		449BB2D91E810D6A00240E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		449BB2DB1E810D6A00240E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D9F99B1E812245002F10DF /* JWPlayerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JWPlayerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		44D9F99C1E812246002F10DF /* VideoPlayerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerCollectionViewCell.h; sourceTree = "<group>"; };
+		44D9F99D1E812246002F10DF /* VideoPlayerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerCollectionViewCell.m; sourceTree = "<group>"; };
 		457839988A8ED32C5F62D72D /* Pods_JWPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F704183BCB9094E69F28C1 /* Pods-JWPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWPlayerDemo/Pods-JWPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B2FA81FD6284C9F80105617F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,9 @@
 				B2FA836538D3777AAA17CEC9 /* DetailViewController.swift */,
 				B2FA81FD6284C9F80105617F /* ListViewController.swift */,
 				B2FA826ADCEA95CDEAE29FED /* AppDelegate.swift */,
+				44D9F99C1E812246002F10DF /* VideoPlayerCollectionViewCell.h */,
+				44D9F99D1E812246002F10DF /* VideoPlayerCollectionViewCell.m */,
+				44D9F99B1E812245002F10DF /* JWPlayerDemo-Bridging-Header.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 					449BB2C91E810D6A00240E5D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 88GZ4GY3GM;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -224,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2FA8D2B77B63955754D5CED /* DetailViewController.swift in Sources */,
+				44D9F99E1E812246002F10DF /* VideoPlayerCollectionViewCell.m in Sources */,
 				B2FA86A476617F6C171D46C4 /* ListViewController.swift in Sources */,
 				B2FA8ECDF601E5F765B8C7DE /* AppDelegate.swift in Sources */,
 			);
@@ -347,12 +356,15 @@
 			baseConfigurationReference = 88F704183BCB9094E69F28C1 /* Pods-JWPlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 88GZ4GY3GM;
 				INFOPLIST_FILE = JWPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.techery.JWPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JWPlayerDemo/Source/JWPlayerDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -362,12 +374,14 @@
 			baseConfigurationReference = 19357CF3011165511D053AE7 /* Pods-JWPlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 88GZ4GY3GM;
 				INFOPLIST_FILE = JWPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.techery.JWPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JWPlayerDemo/Source/JWPlayerDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

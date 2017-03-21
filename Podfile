@@ -5,4 +5,5 @@ use_frameworks!
 
 target 'JWPlayerDemo' do
     pod 'JWPlayer-SDK', '~> 2.0'
+    pod 'Masonry'
 end

@@ -1,12 +1,15 @@
 PODS:
   - JWPlayer-SDK (2.7.1)
+  - Masonry (1.0.2)
 
 DEPENDENCIES:
   - JWPlayer-SDK (~> 2.0)
+  - Masonry
 
 SPEC CHECKSUMS:
   JWPlayer-SDK: 58d986a1622b30561de3135a47dcf4fa9637a54c
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
 
-PODFILE CHECKSUM: d84e6882dc112b9f97fd272e6e26a5f0d7c4ac57
+PODFILE CHECKSUM: 4c13ecc74c58e6cf8793df8ebc19a46e8d4e0629
 
 COCOAPODS: 1.1.1
